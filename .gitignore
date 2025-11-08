@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project-specific - DO NOT UPLOAD SENSITIVE DATA
+case_study*.xlsx
+case_study*
+credit_risk_predictions.csv
+*.xlsx
+
+# Large files
+*.zip
+*.tar.gz
