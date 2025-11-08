@@ -1,0 +1,50 @@
+
+======================================================================
+CREDIT RISK MODELING - MODEL PERFORMANCE REPORT
+======================================================================
+
+PROJECT OVERVIEW:
+- Objective: Multi-class credit risk classification (P1, P2, P3, P4)
+- Model Type: XGBoost (Tuned)
+- Test Set Size: 8,413 records
+- Number of Features: 49
+
+PERFORMANCE METRICS:
+- Overall Accuracy: 0.7799
+- Macro-Average AUC: 0.9227
+
+PER-CLASS PERFORMANCE:
+  Class P1: Precision=0.8366, Recall=0.7770, F1=0.8057
+  Class P2: Precision=0.8256, Recall=0.9196, F1=0.8701
+  Class P3: Precision=0.4385, Recall=0.2904, F1=0.3494
+  Class P4: Precision=0.7597, Recall=0.7056, F1=0.7317
+
+BUSINESS IMPACT:
+- Portfolio Size: 8,413 loans
+- Expected Loss Estimation Error: 6.06%
+- Rejection Rate: 11.62%
+- Type I Errors (High-risk approved): 310
+- Type II Errors (Low-risk rejected): 235
+
+RISK ANALYSIS:
+- Potential Loss from Type I: $21,700,000
+- Lost Revenue from Type II: $1,175,000
+
+DATA LEAKAGE PREVENTION:
+✓ Train-test split performed BEFORE feature selection
+✓ Feature engineering on training data only
+✓ No look-ahead bias in temporal features
+
+MODEL INTERPRETABILITY:
+✓ Feature importance calculated
+✓ Business metrics documented
+✓ Cost-benefit analysis completed
+
+DEPLOYMENT READINESS:
+✓ Model saved as pickle file
+✓ Feature names and encoders saved
+✓ Reproducible pipeline established
+
+======================================================================
+Generated: 2025-11-08 15:46:36
+======================================================================
